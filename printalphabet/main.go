@@ -7,5 +7,4 @@ func main() {
 		z01.PrintRune(rune(lettre))
 		z01.PrintRune('\n')
 	}
-
 }
