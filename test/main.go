@@ -6,9 +6,8 @@ import (
 )
 
 func main() {
-	a := 13
-	b := 2
-	piscine.UltimateDivMod(&a, &b)
-	fmt.Println(a)
-	fmt.Println(b)
+	fmt.Println(piscine.BasicAtoi2("12345"))
+	fmt.Println(piscine.BasicAtoi2("0000000012345"))
+	fmt.Println(piscine.BasicAtoi2("012 345"))
+	fmt.Println(piscine.BasicAtoi2("Hello World!"))
 }
