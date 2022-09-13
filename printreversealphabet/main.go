@@ -1,10 +1,11 @@
 package main
 
-import "github.com/01-edu/z01"
+import (
+	"fmt"
+	"piscine"
+)
 
 func main() {
-	for lettre := 122; lettre >= 97; lettre-- {
-		z01.PrintRune(rune(lettre))
-	}
-	z01.PrintRune('\n')
+	fmt.Println(piscine.IsPrime(5))
+	fmt.Println(piscine.IsPrime(4))
 }
