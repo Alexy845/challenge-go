@@ -1,19 +1,18 @@
 package piscine
 
 func BasicAtoi2(s string) int {
-	runes := []rune{}
-	for _, st := range s {
-		runes = append(runes, st)
-	}
-	total := 0
-	for i := 0; i < len(runes); i++ {
-		r := runes[i]
-		if r >= 48 && r <= 57 {
-			total = total*10 + int(r-48)
-			continue
+	srune := []rune(s)
+	sint := []int{}
+	for _, c := range srune {
+		if int(c)-48 <= 9 && int(c)-48 >= 0 {
+			sint = append(sint, int(c)-48)
 		} else {
 			return 0
 		}
 	}
-	return total
+	result := 0
+	for _, c := range sint {
+		result = result*10 + c
+	}
+	return result
 }
