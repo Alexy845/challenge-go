@@ -5,7 +5,7 @@ func Index(s string, toFind string) int {
 		return -1
 	}
 	for t := range s {
-		var l string = s[t:len(toFind)]
+		l := s[t:len(toFind)]
 		if l == toFind {
 			return t
 		}
