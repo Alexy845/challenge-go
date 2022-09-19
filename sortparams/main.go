@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	arg := os.Args[1:]
+	arg := os.Args[1:] // trieur
 	for i := 0; i < len(arg); i++ {
 		for j := i; j < len(arg); j++ {
 			if arg[i] > arg[j] {
