@@ -10,7 +10,7 @@ func Split(s, sep string) []string {
 			continue
 		}
 		if sep == s[i:i+len(sep)] {
-			counter += len(sep)
+			counter += len(sep) - 1
 			tab = append(tab, str)
 			str = ""
 		} else {
