@@ -10,14 +10,13 @@ func Split(s, sep string) []string {
 			continue
 		}
 		if len(s[i:]) > len(sep) && sep == s[i:i+len(sep)] {
-			counter = len(sep)
+			counter = len(sep) - 1
 			tab = append(tab, str)
 			str = ""
 		} else {
 			str += string(s[i])
 		}
 	}
-	str += string(s[len([]rune(s))-1])
 	tab = append(tab, str)
 	return tab
 }
