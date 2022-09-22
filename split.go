@@ -17,7 +17,6 @@ func Split(s, sep string) []string {
 			str += string(s[i])
 		}
 	}
-	str += s[len(s)-len(sep)-1:]
 	tab = append(tab, str)
 	return tab
 }
