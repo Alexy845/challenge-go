@@ -1,5 +1,9 @@
 package main
 
+import (
+	"github.com/01-edu/z01"
+)
+
 type point struct {
 	x int
 	y int
@@ -10,14 +14,15 @@ func setPoint(ptr *point) {
 	ptr.y = 21
 }
 
-func main() {
-	points := &point{}
-
-	setPoint(points)
-
-	printStr("x = %d, y = %d\n", points.x, points.y)
+func printStr(s string) {
+	for _, r := range s {
+		z01.PrintRune(r)
+	}
+	z01.PrintRune('\n')
 }
 
-func printStr(s string, i1, i2 int) {
-	panic("unimplemented")
+func main() {
+	points := &point{}
+	setPoint(points)
+	printStr(`x = ` + "42" + `, y = ` + "21")
 }
