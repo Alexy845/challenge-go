@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 type point struct {
 	x int
 	y int
@@ -19,5 +15,5 @@ func main() {
 
 	setPoint(points)
 
-	fmt.Printf("x = %d, y = %d\n", points.x, points.y)
+	print("x = %d, y = %d\n", points.x, points.y)
 }
