@@ -15,5 +15,9 @@ func main() {
 
 	setPoint(points)
 
-	print("x = %d, y = %d\n", points.x, points.y)
+	printStr("x = %d, y = %d\n", points.x, points.y)
+}
+
+func printStr(s string, i1, i2 int) {
+	panic("unimplemented")
 }
