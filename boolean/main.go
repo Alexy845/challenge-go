@@ -14,7 +14,7 @@ func printStr(s string) {
 }
 
 func isEven(nbr int) bool {
-	if nbr == 1 {
+	if nbr%2 == 1 {
 		return true
 	} else {
 		return false
@@ -22,7 +22,8 @@ func isEven(nbr int) bool {
 }
 
 func main() {
-	if isEven(len(os.Args[1:])) == true {
+	if isEven(len(os.Args)) == true {
+
 		printStr("I have an even number of arguments")
 	} else {
 		printStr("I have an odd number of arguments")
